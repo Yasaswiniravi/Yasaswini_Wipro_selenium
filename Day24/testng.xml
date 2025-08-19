@@ -1,0 +1,21 @@
+<suite name="ParallelSuite" parallel="classes" thread-count="1">
+    <test name="ParallelTestExecution">
+        <classes>
+            <class name="Testing_package.Testclass1"/>
+           	<class name="Testing_package.Testclass2"/>
+
+        </classes>
+    </test>
+
+    <test name="logintest">
+    	<parameter name="username" values="admin"/>
+    	<parameter name="password" values="123456"/>
+    	<parameter name="username" values="456378"/>
+    	<parameter name="password" values="4758986"/>
+
+    	
+        <classes>
+            <class name="logintest"/>
+        </classes>
+    </test>
+</suite>
